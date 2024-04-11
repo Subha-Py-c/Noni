@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<!-- 
+  nav ta hover na kore button system korleu hoi
+  protita letter baseline theke berobe, like hello animation
+
+  need redesign for mobile
+
+  will be great if the flowers in the image show parallex on hovering
+
+  in the nav we will add a mark of where are we now, see awwwards nav
+  specially needed for the old-art-picture website
+
+  keep the darkmode even after refresh
+
+  slow-scroll + appear on scroll using js
+
+  hover animation should start after 0.2s delay for the nav, 
+  i.e cursor should stay on nav over 0.2s to start the animation
+ -->
+<body>
+  <nav id="nav">
+    <div class="nav">
+      <div id="ul" class="ul">
+        <div class="li" id="start">
+          <a href="#section1">Home</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#section2">Portfolio</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#section3">Experience</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#section4">Skills</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#">Projects</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#">Contact</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#">Hire Me</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#">Hobbies</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li mid" id="li">
+          <a href="#">Academics</a>
+          <div class="hr"></div>
+        </div>
+        <div class="li" id="end">
+          <a href="#">About</a>
+          <!-- <div class="hr"></div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button id="invert-button" class="filters" onclick="toggleDarkMode()">
+<!-- why does it need a font? -->.
+    <i id="sun-icon" class="fas fa-sun"></i> <!-- Sun icon -->
+    <i id="moon-icon" class="fas fa-moon" style="display: none;"></i> <!-- Moon icon initially hidden -->
+  </button>
+
+  <section class="section" id="section1">
+
+    <div class="container c1" id="c1">
+
+      <div class="box b1" id="b1">
+        <!-- image -->
+      </div>
+
+      <div class="box b2" id="b2">
+        <span id="welcome" class="span">
+          Welcome!
+        </span>
+
+        <br>
+        <span class="dancing-script-base span-style">
+          Made with ❤️ by Subhajit Gorai
+        </span>
+      </div>
+
+      <div class="box b3" id="b3">
+        <!-- image -->
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="cursor"></div> -->
+
+</body>
+</html>
