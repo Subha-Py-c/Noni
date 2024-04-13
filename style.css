@@ -25,7 +25,7 @@
   --final-height-of-container-nav-div: calc(var(--height-of-one-nav-li) * var(--total-nav-li));
   --width-of-container-nav-div: 400px;
   --bg1: rgba(255, 126, 242, 0.21);
-  --bg2: rgba(227, 12, 132, 0.89);
+  --bg2: rgba(226, 46, 152, 0.68);
 
   /* nav */
   --initial-height-of-nav: calc(var(--initial-height-of-container-nav-div) + var(--difference));
