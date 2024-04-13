@@ -24,8 +24,8 @@
   --initial-height-of-container-nav-div: 40px;
   --final-height-of-container-nav-div: calc(var(--height-of-one-nav-li) * var(--total-nav-li));
   --width-of-container-nav-div: 400px;
-  --bg1: rgba(173, 173, 173, 0.389);
-  --bg2: rgba(173, 173, 173, 0.889);
+  --bg1: rgba(255, 126, 242, 0.21);
+  --bg2: rgba(227, 12, 132, 0.89);
 
   /* nav */
   --initial-height-of-nav: calc(var(--initial-height-of-container-nav-div) + var(--difference));
@@ -237,6 +237,7 @@ nav:hover .nav .ul .li a{
   padding: 0;
   border-radius: 50%;
   /* border: 3px solid rgba(168, 168, 168, 0.8); */
+  background-color: transparent;
   border: none;
   mix-blend-mode:darken;
   transition: var(--transition-duration);
@@ -269,9 +270,9 @@ section{
   width: 100%;
 
   /* background-image: url('pictures/original.jpg'); */
-  background-image: url('pictures/timid-gentle-grass.jpg');
+  /* background-image: url('pictures/timid-gentle-grass.jpg'); */
   /* background-image: url('pictures/p-boat.jpeg'); */
-  /* background-image: url('pictures/pink-flowers.jpg'); */
+  background-image: url('pictures/pink-flowers.jpg');
   /* background-image: url('pictures/blue-flowers.jpg'); */
   /* background-image: url('pictures/b-w.jpeg'); */
 
