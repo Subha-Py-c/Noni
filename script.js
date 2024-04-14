@@ -10,39 +10,36 @@ function toggleDarkMode() {
   moonIcon.style.display = moonIcon.style.display === "none" ? "inline" : "none";
 }
 
-const cursor = document.querySelector('.cursor');
-if (cursor) {
-  document.addEventListener('mousemove', (e) =>{
-      cursor.style.left = e.pageX + 'px';
-      cursor.style.top = e.pageY + 'px';
-  });
+// const cursor = document.querySelector('.cursor');
+// if (cursor) {
+//   document.addEventListener('mousemove', (e) =>{
+//       cursor.style.left = e.pageX + 'px';
+//       cursor.style.top = e.pageY + 'px';
+//   });
+// }
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
-// Get the element
-var element = document.getElementById('nav');
-if (element) {
-  var hoverTimeout;
-
-  // Function to apply hover effect
-  function applyHoverEffect() {
-    element.classList.add('hover-effect');
+// Function to handle scroll event
+function handleScroll() {
+  var element = document.getElementById('b2');
+  if (isInViewport(element)) {
+    // If element is in the viewport, add a class to trigger the animation
+    element.classList.add('animate');
+    // Remove the scroll event listener once the animation is triggered
+    window.removeEventListener('scroll', handleScroll);
   }
-
-  // Function to remove hover effect
-  function removeHoverEffect() {
-    element.classList.remove('hover-effect');
-  }
-
-  // Event listener for mouse entering the element
-  element.addEventListener('mouseenter', function() {
-    // Set a timeout for 1.2s (1200ms)
-    hoverTimeout = setTimeout(applyHoverEffect, 1200);
-  });
-
-  // Event listener for mouse leaving the element
-  element.addEventListener('mouseleave', function() {
-    // Clear the timeout if mouse leaves before 1.2s (1200ms)
-    clearTimeout(hoverTimeout);
-    removeHoverEffect();
-  });
 }
+
+// Add scroll event listener to trigger animation when element is in viewport
+window.addEventListener('scroll', handleScroll);
+
