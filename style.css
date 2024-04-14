@@ -415,7 +415,7 @@ intro-div
  */
 #b2{
   position: absolute;
-  top: calc(100vh + 300px); 
+  top: calc(200vh + 300px); 
   /* 900+200 */
   left: 500px;
   width: calc(100vw - 610px);
