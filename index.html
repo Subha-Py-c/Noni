@@ -30,7 +30,7 @@
 
             & .container{
                 position: relative;
-                width: 400px;
+                width: 500px;
                 height: 400px;
                 border-radius: 25px;
                 display: flex;
@@ -43,6 +43,50 @@
             & .container svg{
                 width: 200px;
                 height: 200px;
+            }
+        }
+        @media only screen and (min-width: 1125px) {
+            section {
+                & .container {
+                    width: 600px;
+                    height: 500px;
+                    border-radius: 30px;
+                }
+        
+                & .container svg {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+        /* Tablets (601px to 1024px) */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            section {
+                & .container {
+                    width: 400px;
+                    height: 350px;
+                    border-radius: 20px;
+                }
+        
+                & .container svg {
+                    width: 175px;
+                    height: 175px;
+                }
+            }
+        }
+        /* Mobile Devices (up to 600px) */
+        @media only screen and (max-width: 600px) {
+            section {
+                & .container {
+                    width: 300px;
+                    height: 250px;
+                    border-radius: 20px;
+                }
+        
+                & .container svg {
+                    width: 150px;
+                    height: 150px;
+                }
             }
         }
     </style>
@@ -60,7 +104,7 @@
             </svg>
             <h2>Thanks For Contacting</h2>
             <br>
-            <p>I will get back to you as soon as possible.</p>
+            <p>I will get in touch as soon as possible.</p>
             <a href="https://subha-py-c.github.io/Port-Folio/">Back To Home</a>
         </div>
     </section>
