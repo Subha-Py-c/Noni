@@ -19,9 +19,14 @@
             background-color: var(--clr2);
             color: var(--clr1);
         }
+        .flexed{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
         section{
-            height: 100vh;
-            width: 100vw;
+            height: 100dvh;
+            width: 100dvw;
             background-color: var(--clr2);
             font-family: poppins, sans-serif;
             display: flex;
@@ -38,6 +43,16 @@
                 align-items: center;
                 justify-content: center;
                 background-color: rgb(240,248,255);
+
+                & a{
+                    text-decoration: none;
+                    background-color: #111;
+                    color: white;
+                    border-radius: 10px;
+                    box-sizing: content-box;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
             }
 
             & .container svg{
@@ -78,14 +93,32 @@
         @media only screen and (max-width: 600px) {
             section {
                 & .container {
-                    width: 300px;
-                    height: 250px;
+                    /*
+                    width: min(360px, 90vw);
+                    */
+                    width: 360px;
+                    height: 320px;
                     border-radius: 20px;
                 }
         
                 & .container svg {
                     width: 150px;
                     height: 150px;
+                }
+            }
+        }
+        /* Mobile Devices (up to 350px) */
+        @media only screen and (max-width: 350px) {
+            section {
+                & .container {
+                    width: 280px;
+                    height: 320px;
+                    border-radius: 20px;
+                }
+        
+                & .container svg {
+                    width: 120px;
+                    height: 120px;
                 }
             }
         }
@@ -105,7 +138,7 @@
             <h2>Thanks For Contacting</h2>
             <br>
             <p>I will get in touch as soon as possible.</p>
-            <a href="https://subhajit.pages.dev">Back To Home</a>
+            <a href="https://subhajit.pages.dev"><span class="flexed">⬅</span>Back To Home</a>
         </div>
     </section>
 </body>
